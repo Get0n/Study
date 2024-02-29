@@ -1,2 +1,18 @@
-nice
-hello
+Typing "cat", followed by the filename (like test.py) in the command line will display the code
+ex: 
+cat test.py
+
+"diff", followed by the filename (like test.py) and another filename will display both files and the differences.
+ex:
+diff paper1.py paper2.py
+
+  "diff -u" shows a more detailed format to display differences
+ex:
+diff -u paper1.py paper2.py
+
+"patch" will apply the changes made from a .diff file to the original file
+
+  to apply changes to a file use this:
+patch paper1.py paper.diff
+  You may need to convert the diff file if they have mismatched line endings. the following code convert to Unicode Format
+$ dos2unix paper.diff
